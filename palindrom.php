@@ -1,6 +1,7 @@
 <?php
 echo "<h4>Testing if a string is or isn't a palindrom</h4><br>";
 
+//define function
 function checkIfPalindrom($stringToTest){
 	/*A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such 	as madam or racecar*/
 
@@ -27,7 +28,8 @@ function checkIfPalindrom($stringToTest){
    	 }   
 echo "<br><br>";
 }    
-     
+ 
+//call function with different values
 checkIfPalindrom(ana); 
 checkIfPalindrom(mama); 
 checkIfPalindrom(racecar); 
