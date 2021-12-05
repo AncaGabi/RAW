@@ -43,59 +43,54 @@ function calculateNumberOfMultipliers($arrayOfNumbers){
            
 }    
  
+//positive testing 
+ 
+//number of multipliers of 6
 //define array  
 $arrayOfNumbers= array(6, 18.0, -36);
 //call function
 calculateNumberOfMultipliers($arrayOfNumbers);
 
-//define array  
+//number of multipliers of 4
 $arrayOfNumbers= array(4, -16, 0.20);
-//call function
 calculateNumberOfMultipliers($arrayOfNumbers);
 
-
-//define array  
+//number of multipliers of 4 and 6 (counted only once)  
 $arrayOfNumbers= array(0,12, -60, 600.24);
-//call function
 calculateNumberOfMultipliers($arrayOfNumbers);
 
-
-//define array 
+//number of multipliers of 4 and 6 (long array)
 $arrayOfNumbers= array(0,6,13,c,hyte,-21,25,36,40,01,60,66,44,40,48,50,60,66,72,76,80,84,92,-500,320.06,120,160,180,abv,220,320,800,888," ",null,4,15,12,19,35,30,24,444,600,alabala,6,13,25,36,40,01,60,66,44,40,48,50,60,66,72,76,80,84,92,-500,320.06,120,160,180,abv,220,320,800,888," ",null, 4,15,12,19,35,30,24,444,600,alabala);
-//call function
 calculateNumberOfMultipliers($arrayOfNumbers);
 
 
-//define array  
+
+//negative testing 
+
+//numbers that are not 4 or 6 multipliers are not counted
 $arrayOfNumbers= array(1, 5.1, -379);
-//call function
 calculateNumberOfMultipliers($arrayOfNumbers);
 
-//define array  
+//NULL value is not counted 
 $arrayOfNumbers= array(NULL);
-//call function
 calculateNumberOfMultipliers($arrayOfNumbers);
 
-//define array  
+//empty value is not cpunted
 $arrayOfNumbers= array("  ");
-//call function
 calculateNumberOfMultipliers($arrayOfNumbers); 
 
-//define array  
+//alphanumeric values are not counted 
 $arrayOfNumbers= array(abv3);
-//call function
 calculateNumberOfMultipliers($arrayOfNumbers); 
 
 
-//define array  
+//boolean values are not counted 
 $arrayOfNumbers= array(true);
-//call function
 calculateNumberOfMultipliers($arrayOfNumbers); 
 
 
-//define array  
+//special characters are not counted
 $arrayOfNumbers= array("/&^%");
-//call function
 calculateNumberOfMultipliers($arrayOfNumbers); 
 
 ?> 
